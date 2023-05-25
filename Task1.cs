@@ -12,17 +12,19 @@ namespace LINQ
     {
         public static void task1()
         {
-            List<double> listDouble = new List<double>() { 0.3,0.6,0.3,1,2,5};
-
-            var NewListDouble = listDouble.Where(x => (x*10)%10==0);
-            Console.WriteLine("Масив цілих : ");
-            foreach ( var x in NewListDouble )
-            {
-                Console.WriteLine(x);
-            }
+            
 
 
             List<int> list = new List<int>() { 1,2,3,4,5,6,7,8,9,14};
+
+            Console.WriteLine("All Numbers:");
+            foreach (var number in list)
+            {
+                Console.Write(number + " ");
+            }
+            Console.WriteLine();
+
+
 
             var evenNumbers = list.Where(x => x % 2 == 0).ToList();
             Console.WriteLine("Even Numbers:");
